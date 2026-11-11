@@ -1,0 +1,503 @@
+<!DOCTYPE html><html class="dark" lang="fr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#2f1500","secondary":"#ffb77f","gold-subtle":"rgba(212, 175, 55, 0.22)","on-tertiary":"#3c2f00","inverse-on-surface":"#2f3131","on-background":"#e2e2e2","deep-navy":"#0D1B3E","outline-variant":"#45464e","surface-container-high":"#282a2b","white-muted":"rgba(255, 255, 255, 0.72)","surface-container-highest":"#333535","on-surface":"#e2e2e2","pure-white":"#FFFFFF","on-secondary-container":"#613100","electric-orange":"#FF8A00","primary-fixed":"#dbe1ff","inverse-primary":"#515d84","surface-variant":"#333535","navy-border":"#1E3368","white-faint":"rgba(255, 255, 255, 0.44)","surface-container":"#1e2020","tertiary":"#e9c349","on-primary-container":"#7784ad","on-secondary-fixed-variant":"#6f3900","on-tertiary-fixed":"#241a00","secondary-container":"#ff8a00","on-primary":"#222f53","surface-tint":"#b9c5f2","secondary-fixed":"#ffdcc4","on-error":"#690005","navy-elevated":"#14244F","error":"#ffb4ab","on-tertiary-container":"#4e3d00","surface":"#121414","background":"#121414","on-primary-fixed-variant":"#39456b","institutional-gold":"#D4AF37","inverse-surface":"#e2e2e2","on-surface-variant":"#c6c6cf","tertiary-fixed-dim":"#e9c349","on-primary-fixed":"#0b1a3d","primary":"#b9c5f2","primary-container":"#0d1b3e","error-container":"#93000a","primary-fixed-dim":"#b9c5f2","surface-container-lowest":"#0c0f0f","on-error-container":"#ffdad6","surface-dim":"#121414","tertiary-fixed":"#ffe088","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","secondary-fixed-dim":"#ffb77f","surface-container-low":"#1a1c1c","surface-bright":"#37393a","outline":"#8f9099","on-secondary":"#4e2600"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-3xl":"6rem","space-2xl":"4rem","gutter":"1.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","margin":"3rem"},"fontFamily":{"headline-sm":["Geist"],"display-hero":["Geist"],"display-hero-mobile":["Geist"],"label-code":["JetBrains Mono"],"label-badge":["Geist"],"headline-md":["Geist"],"title-card":["Geist"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"body-md":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"title-card":["17px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-deep-navy text-on-surface font-body-md text-body-md min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-deep-navy/85 backdrop-blur-xl border-b border-institutional-gold/20"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Logo AK Aristide Kenfack" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFuHcTSSlzI3l4b4zR-AEOZzMTuRlm6kPJMI2XTWxpmLNCpMzS6P5bt92GZiaQNurXiB-QitQK4LbQUcjwOsCA9Xcq0NeDmttOOb20gxnOvB4Ph3uhMp60AI4qJI599HOpaH1J3yf_QYsSmGT3z5XOGoXZWFSM0DpKeACST1wzEwnf1jAgfRip2vDF-tCLZ0jH3JzItzozb_YFFqYB2av67DWHg8sqkmmKCIPMQr_VgA"><div class="flex flex-col"><span class="font-title-card text-title-card text-pure-white tracking-tight">Aristide Kenfack</span><span class="font-label-badge text-label-badge text-institutional-gold tracking-wider uppercase">Full Stack · DevOps</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-electric-orange font-title-card"><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="parcours" href="#">Parcours</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="competences" href="#">Compétences</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="projets" href="#">Projets</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-electric-orange text-deep-navy font-title-card text-body-sm shadow-[0_2px_12px_rgba(255,138,0,0.3)] hover:brightness-110 transition-all" data-path="cv" href="#">CV</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-deep-navy"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner -->
+<section class="relative w-full bg-pure-white text-deep-navy px-margin-mobile md:px-margin py-space-2xl md:py-space-3xl overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-institutional-gold/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-electric-orange/10 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-[1280px] mx-auto flex flex-col gap-space-lg">
+<!-- Eyebrow Tag -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-1.5 rounded-full bg-deep-navy/5 text-deep-navy">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-institutional-gold shadow-[0_0_8px_rgba(212,175,55,0.8)]"></span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-deep-navy">PARCOURS PROFESSIONNEL &amp; EXPÉDITION TECHNIQUE</span>
+</div>
+<!-- Main Headline -->
+<div class="max-w-4xl flex flex-col gap-space-sm">
+<h1 class="font-headline-lg md:font-display-hero text-headline-lg md:text-display-hero text-deep-navy tracking-tight">
+          Trajectoire, Évolution &amp; Jalons d'Ingénierie
+        </h1>
+<p class="font-body-lg text-body-lg text-deep-navy/80 max-w-3xl leading-relaxed">
+          De la maîtrise rigoureuse des fondations algorithmiques au déploiement d'architectures distribuées et pipelines CI/CD résilients. Chronologie détaillée d'un engagement constant vers l'excellence logicielle.
+        </p>
+</div>
+<!-- Live Quick Filters -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-xs md:gap-space-sm" id="timeline-filters">
+<button class="timeline-filter-btn px-space-md py-2 rounded-lg bg-deep-navy text-pure-white font-title-card text-body-sm shadow-md transition-all hover:bg-deep-navy/90" data-filter="all">
+          Tous les jalons
+        </button>
+<button class="timeline-filter-btn px-space-md py-2 rounded-lg bg-deep-navy/5 text-deep-navy font-title-card text-body-sm hover:bg-deep-navy/10 transition-all" data-filter="exp">
+          Expériences &amp; Rôles
+        </button>
+<button class="timeline-filter-btn px-space-md py-2 rounded-lg bg-deep-navy/5 text-deep-navy font-title-card text-body-sm hover:bg-deep-navy/10 transition-all" data-filter="infra">
+          Réalisations d'Infrastructure
+        </button>
+<button class="timeline-filter-btn px-space-md py-2 rounded-lg bg-deep-navy/5 text-deep-navy font-title-card text-body-sm hover:bg-deep-navy/10 transition-all" data-filter="edu">
+          Formations &amp; Fondations
+        </button>
+</div>
+<!-- Mini KPI Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-lg">
+<div class="p-space-md rounded-xl bg-pure-white shadow-md flex flex-col gap-1">
+<span class="font-headline-md text-headline-md text-electric-orange font-bold">4+</span>
+<span class="font-label-code text-label-code text-deep-navy/70 uppercase">Années d'Expérience</span>
+</div>
+<div class="p-space-md rounded-xl bg-pure-white shadow-md flex flex-col gap-1">
+<span class="font-headline-md text-headline-md text-deep-navy font-bold">-45%</span>
+<span class="font-label-code text-label-code text-deep-navy/70 uppercase">Durée Release CI/CD</span>
+</div>
+<div class="p-space-md rounded-xl bg-pure-white shadow-md flex flex-col gap-1">
+<span class="font-headline-md text-headline-md text-institutional-gold font-bold">99.9%</span>
+<span class="font-label-code text-label-code text-deep-navy/70 uppercase">Objectif Disponibilité</span>
+</div>
+<div class="p-space-md rounded-xl bg-pure-white shadow-md flex flex-col gap-1">
+<span class="font-headline-md text-headline-md text-electric-orange font-bold">12+</span>
+<span class="font-label-code text-label-code text-deep-navy/70 uppercase">Pipelines &amp; Services Clés</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Timeline Container -->
+<section class="w-full bg-deep-navy py-space-3xl px-margin-mobile md:px-margin relative">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header Inside Navy Zone -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-code text-label-code text-institutional-gold uppercase tracking-wider">CHRONOLOGIE OPÉRATIONNELLE</span>
+<h2 class="font-headline-lg text-headline-lg text-pure-white">Étapes Clés &amp; Impacts Mesurables</h2>
+</div>
+<div class="flex items-center gap-space-sm text-pure-white/70 font-label-code text-label-code">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-electric-orange animate-pulse"></span>
+<span class="">Indexation séquentielle 2021 — 2026</span>
+</div>
+</div>
+<!-- Vertical Timeline Track -->
+<div class="relative pl-6 md:pl-12 flex flex-col gap-space-2xl">
+<!-- Vertical Golden Rail line -->
+<div class="absolute left-2 md:left-4 top-4 bottom-8 w-1 bg-institutional-gold/40 rounded-full shadow-[0_0_12px_rgba(212,175,55,0.35)]"></div>
+<!-- TIMELINE ITEM 1 -->
+<div class="timeline-entry relative flex flex-col gap-space-md" data-category="exp infra">
+<!-- Node Dot -->
+<div class="absolute -left-6 md:-left-12 top-1.5 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-deep-navy p-1 shadow-lg">
+<div class="w-full h-full rounded-full bg-electric-orange shadow-[0_0_12px_#FF8A00] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-pure-white"></span>
+</div>
+</div>
+</div>
+<!-- Content Card -->
+<div class="group bg-pure-white text-deep-navy rounded-xl p-space-lg md:p-space-xl shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded-md bg-electric-orange text-deep-navy font-title-card text-body-sm font-semibold">2024 — Aujourd'hui</span>
+<span class="px-space-sm py-1 rounded-md bg-deep-navy/5 text-deep-navy font-label-code text-label-code">Mission Freelance &amp; Déploiements Hybrides</span>
+</div>
+<span class="font-label-badge text-label-badge text-institutional-gold uppercase tracking-wider font-semibold">En cours d'exécution</span>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-deep-navy">Ingénieur Full Stack &amp; DevOps Indépendant</h3>
+<p class="font-title-card text-title-card text-deep-navy/70">Startups FinTech &amp; PME en Afrique Centrale &amp; Distribué</p>
+</div>
+<!-- Visual Performance Callout -->
+<div class="my-space-md grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-deep-navy/5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-electric-orange text-[28px]">speed</span>
+<div>
+<div class="font-title-card text-title-card text-deep-navy">-45% Release Time</div>
+<div class="font-body-sm text-body-sm text-deep-navy/70">Pipeline automatisé sans rollback</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[28px]">deployed_code</span>
+<div>
+<div class="font-title-card text-title-card text-deep-navy">Microservices Docker</div>
+<div class="font-body-sm text-body-sm text-deep-navy/70">Conteneurs isolés &amp; orchestrés</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-deep-navy text-[28px]">query_stats</span>
+<div>
+<div class="font-title-card text-title-card text-deep-navy">Observabilité 24/7</div>
+<div class="font-body-sm text-body-sm text-deep-navy/70">Prometheus, Grafana &amp; Nginx</div>
+</div>
+</div>
+</div>
+<!-- Detailed Accomplishments -->
+<div class="flex flex-col gap-space-sm py-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-electric-orange text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Conception et mise en production d'architectures microservices conteneurisées avec Docker et orchestrées via scripts d'automatisation robuste.
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-electric-orange text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Mise en place de pipelines CI/CD résilients réduisant le temps de release de 45% sans aucune interruption de service pour les utilisateurs finaux.
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-electric-orange text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Accompagnement technique sur les standards DevOps, monitoring proactif (Prometheus/Grafana) et reverse proxy Nginx haute performance.
+                </p>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">TypeScript</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Next.js</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Laravel</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Docker</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Kubernetes</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">CI/CD</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Nginx</span>
+</div>
+</div>
+</div>
+<!-- TIMELINE ITEM 2 -->
+<div class="timeline-entry relative flex flex-col gap-space-md" data-category="exp">
+<!-- Node Dot -->
+<div class="absolute -left-6 md:-left-12 top-1.5 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-deep-navy p-1 shadow-lg">
+<div class="w-full h-full rounded-full bg-institutional-gold shadow-[0_0_10px_#D4AF37] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-pure-white"></span>
+</div>
+</div>
+</div>
+<!-- Content Card -->
+<div class="group bg-pure-white text-deep-navy rounded-xl p-space-lg md:p-space-xl shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded-md bg-institutional-gold/20 text-deep-navy font-title-card text-body-sm font-semibold">2023 — 2024</span>
+<span class="px-space-sm py-1 rounded-md bg-deep-navy/5 text-deep-navy font-label-code text-label-code">SaaS &amp; E-Commerce Haute Volumétrie</span>
+</div>
+<span class="font-label-badge text-label-badge text-deep-navy/60 uppercase tracking-wider font-semibold">Backend Engine</span>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-deep-navy">Développeur Backend &amp; Intégration Search Engine</h3>
+<p class="font-title-card text-title-card text-deep-navy/70">Plateformes transactionnelles et catalogues volumineux</p>
+</div>
+<!-- Inline Metric Comparison Block -->
+<div class="my-space-md p-space-md bg-deep-navy/5 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-electric-orange text-[26px]">manage_search</span>
+<div>
+<div class="font-title-card text-title-card text-deep-navy">Latence de Recherche Réduite de 30%</div>
+<div class="font-body-sm text-body-sm text-deep-navy/70">Moteur Typesense synchronisé en temps réel avec PostgreSQL</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-label-code bg-pure-white px-space-md py-1.5 rounded shadow-sm text-deep-navy">
+<span class="text-electric-orange font-bold">&lt; 40ms</span> temps de réponse p95
+              </div>
+</div>
+<!-- Key points -->
+<div class="flex flex-col gap-space-sm py-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Optimisation drastique des temps d'accès aux données : refonte de l'indexation avec Typesense amenant une baisse de latence immédiate de -30%.
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Développement d'APIs REST modulaires et hautement sécurisées sous Node.js &amp; Laravel avec couverture rigoureuse de tests automatisés Jest.
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Intégration de passerelles de paiement locales sécurisées et orchestration asynchrone des files d'attente (Redis Queues) pour absorber les pics de charge.
+                </p>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Node.js</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Laravel</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Typesense</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Redis</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Jest</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">PostgreSQL</span>
+</div>
+</div>
+</div>
+<!-- TIMELINE ITEM 3 -->
+<div class="timeline-entry relative flex flex-col gap-space-md" data-category="exp">
+<!-- Node Dot -->
+<div class="absolute -left-6 md:-left-12 top-1.5 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-deep-navy p-1 shadow-lg">
+<div class="w-full h-full rounded-full bg-pure-white shadow-[0_0_10px_rgba(255,255,255,0.5)] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-deep-navy"></span>
+</div>
+</div>
+</div>
+<!-- Content Card -->
+<div class="group bg-pure-white text-deep-navy rounded-xl p-space-lg md:p-space-xl shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded-md bg-deep-navy/10 text-deep-navy font-title-card text-body-sm font-semibold">2022 — 2023</span>
+<span class="px-space-sm py-1 rounded-md bg-deep-navy/5 text-deep-navy font-label-code text-label-code">UrbanTrack &amp; Solutions Temps Réel</span>
+</div>
+<span class="font-label-badge text-label-badge text-deep-navy/60 uppercase tracking-wider font-semibold">Produits Clés</span>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-deep-navy">Développeur Web &amp; Mobile Full Stack</h3>
+<p class="font-title-card text-title-card text-deep-navy/70">Projets d'innovation &amp; applications connectées</p>
+</div>
+<!-- Accomplishments -->
+<div class="flex flex-col gap-space-sm py-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-deep-navy text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Développement d'applications mobiles Flutter et React fluides avec synchronisation offline résiliente et géolocalisation haute précision (PostGIS).
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-deep-navy text-[20px] mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+                  Conception de consoles d'administration en temps réel animées par WebSockets et dashboards analytiques pour l'exploitation cartographique.
+                </p>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="pt-space-sm flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Flutter</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">React</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">FastAPI</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">PostGIS</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">WebSockets</span>
+</div>
+</div>
+</div>
+<!-- TIMELINE ITEM 4 -->
+<div class="timeline-entry relative flex flex-col gap-space-md" data-category="edu">
+<!-- Node Dot -->
+<div class="absolute -left-6 md:-left-12 top-1.5 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-deep-navy p-1 shadow-lg">
+<div class="w-full h-full rounded-full bg-institutional-gold shadow-[0_0_8px_#D4AF37] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-deep-navy"></span>
+</div>
+</div>
+</div>
+<!-- Content Card -->
+<div class="group bg-pure-white text-deep-navy rounded-xl p-space-lg md:p-space-xl shadow-xl hover:-translate-y-1 transition-all duration-300 border border-institutional-gold/40">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md border-b border-institutional-gold/20">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-sm py-1 rounded-md bg-institutional-gold/20 text-deep-navy font-title-card text-body-sm font-semibold">2021 — 2024</span>
+<span class="px-space-sm py-1 rounded-md bg-deep-navy/5 text-deep-navy font-label-code text-label-code">Formation Académique d'Ingénieur &amp; Pratique Intensive</span>
+</div>
+<span class="font-label-badge text-label-badge text-institutional-gold uppercase tracking-wider font-semibold">Cursus Diplômant</span>
+</div>
+<!-- Institution Highlight Block with ENSPD Logo -->
+<div class="my-space-md p-space-md bg-deep-navy/5 rounded-lg border border-institutional-gold/20 flex flex-col sm:flex-row items-center sm:items-start gap-space-md">
+<div class="w-20 h-20 flex-shrink-0 bg-pure-white p-2 rounded-lg shadow-sm border border-institutional-gold/20 flex items-center justify-center">
+<img alt="École Nationale Supérieure Polytechnique de Douala (ENSPD)" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiaucnTmm0FC-KE_aIh4A3pPNcJyo1iSYx1vsq_VHS2Hag0mScucp8D0et2hh5msrw8qAeJrPftesmi4u--BS9MxAhH5IFupvzgXX8mTcHAuD3-yA4lm-ylBkKrwtF9gjTLmJp-QlGQFOMUqP5unxDV0_Cb0KezQ1iknzrNAr57C-J8VYmb4S8EMXd2GnHYliLEcvEzwNK5lOtQeJxt1MRdTqFYnn_EIY6Kvy2XOs5ve5PGk7pKfEveg">
+</div>
+<div class="flex flex-col gap-1 text-center sm:text-left">
+<div class="inline-flex items-center justify-center sm:justify-start gap-space-xs">
+<span class="font-label-badge text-label-badge text-electric-orange font-bold uppercase tracking-wider">Élève-Ingénieur</span>
+<span class="text-deep-navy/40">•</span>
+<span class="font-label-code text-label-code text-deep-navy/70">Génie Informatique &amp; Télécommunications</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-deep-navy font-bold leading-tight">
+École Nationale Supérieure Polytechnique de Douala (ENSPD)
+</h4>
+<p class="font-body-sm text-body-sm text-deep-navy/80">
+Formation d'excellence en ingénierie logicielle, modélisation mathématique avancée, réseaux et architectures distribuées.
+</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-deep-navy">Fondations Algorithmiques, Systèmes Linux &amp; Réseaux</h3>
+<p class="font-title-card text-title-card text-deep-navy/70">Construction du socle de génie logiciel, d'ingénierie et d'administration système</p>
+</div>
+<!-- Content Details -->
+<div class="flex flex-col gap-space-sm py-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[20px] mt-0.5">terminal</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+Immersion poussée dans les environnements Unix/Linux, architecture TCP/IP, gestion des processus, permissions avancées et scripting Bash d'automatisation.
+</p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-institutional-gold text-[20px] mt-0.5">schema</span>
+<p class="font-body-md text-body-md text-deep-navy/90">
+Pratique intensive de la programmation orientée objet avancée (PHP, Java, TypeScript, C/C++), structures de données complexes et optimisation de requêtes SQL relationnelles.
+</p>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="pt-space-sm flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">ENSPD</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Linux Bash</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">C / PHP</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">SQL</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Git &amp; GitHub</span>
+<span class="px-2.5 py-1 rounded bg-deep-navy text-pure-white font-label-code text-label-code">Merise / UML</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Complémentaire : Méthodologie & Pratiques DevOps -->
+<section class="w-full bg-pure-white text-deep-navy py-space-3xl px-margin-mobile md:px-margin">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Intro -->
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start">
+<span class="w-2 h-2 rounded-full bg-electric-orange"></span>
+<span class="font-label-badge text-label-badge text-institutional-gold uppercase tracking-wider font-semibold">STANDARDS D'INGÉNIERIE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">Méthodologie, Architecture &amp; Rigueur</h2>
+<p class="font-body-md text-body-md text-deep-navy/75">
+          Chaque projet est articulé autour de principes industriels testés : isolation des composants, tests automatisés systématiques et observabilité continue.
+        </p>
+</div>
+<!-- 3 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="flex flex-col gap-space-md p-space-xl rounded-xl bg-deep-navy text-pure-white shadow-xl relative overflow-hidden group">
+<div class="w-12 h-12 rounded-lg bg-electric-orange/20 text-electric-orange flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">all_inclusive</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-pure-white">Culture DevOps &amp; Automatisation</h3>
+<p class="font-body-sm text-body-sm text-pure-white/70">
+              Infrastructure as Code, conteneurisation isolée avec Docker, déploiement sans interruption (Zero-Downtime) et surveillance proactive des métriques.
+            </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-xs font-label-code text-label-code text-institutional-gold">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Docker &amp; Compose multi-stage</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> GitHub Actions &amp; GitLab CI</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Prometheus &amp; Grafana Dashboards</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col gap-space-md p-space-xl rounded-xl bg-deep-navy text-pure-white shadow-xl relative overflow-hidden group">
+<div class="w-12 h-12 rounded-lg bg-institutional-gold/20 text-institutional-gold flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">account_tree</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-pure-white">Rigueur d'Architecture Logicielle</h3>
+<p class="font-body-sm text-body-sm text-pure-white/70">
+              Clean Architecture et Domain-Driven Design (DDD). Modélisation relationnelle robuste, tests unitaires et intégration continue sans régression.
+            </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-xs font-label-code text-label-code text-institutional-gold">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Clean Architecture &amp; SOLID</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> APIs RESTful &amp; Contrats OpenAPI</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> TDD, Jest &amp; PHPUnit</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col gap-space-md p-space-xl rounded-xl bg-deep-navy text-pure-white shadow-xl relative overflow-hidden group">
+<div class="w-12 h-12 rounded-lg bg-pure-white/10 text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">security</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-pure-white">Sécurité &amp; Performance</h3>
+<p class="font-body-sm text-body-sm text-pure-white/70">
+              Renouvellement SSL automatique, gestion hermétique des secrets d'environnement, optimisation chirurgicale des requêtes SQL et caches distribués.
+            </p>
+</div>
+<div class="pt-space-sm flex flex-col gap-space-xs font-label-code text-label-code text-institutional-gold">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Certificats Let's Encrypt auto-renew</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Secrets Vault &amp; env isolation</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-institutional-gold"></span> Caches Redis &amp; indexation avancée</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Terminal Snippet: Deployment Record -->
+<section class="w-full bg-deep-navy px-margin-mobile md:px-margin pb-space-2xl">
+<div class="max-w-[1280px] mx-auto">
+<div class="rounded-xl bg-[#09122B] p-space-lg md:p-space-xl shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-institutional-gold"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-code text-label-code text-pure-white/70">production-pipeline-audit.sh</span>
+</div>
+<span class="font-label-code text-label-code text-institutional-gold">STATUS: VERIFIED</span>
+</div>
+<div class="font-label-code text-label-code text-pure-white/90 overflow-x-auto space-y-1">
+<p class="text-white-faint"># Vérification de l'intégrité de déploiement Aristide Kenfack</p>
+<p class=""><span class="text-electric-orange">$</span> docker run --rm ak/infra-audit:latest --target=prod</p>
+<p class="text-pure-white/75">[✓] Reverse Proxy Nginx : TLS 1.3 Strict-Transport-Security actif</p>
+<p class="text-pure-white/75">[✓] Typesense Cluster : 3 noeuds synchronisés, latence p95 = 28ms</p>
+<p class="text-pure-white/75">[✓] Redis Queue Worker : 0 job en échec sur 140,290 transactions</p>
+<p class="text-institutional-gold">[✓] CI/CD Automation : Déploiement sans coupure certifié</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Callout Section -->
+<section class="w-full bg-deep-navy px-margin-mobile md:px-margin pb-space-3xl">
+<div class="max-w-[1280px] mx-auto">
+<div class="rounded-2xl bg-deep-navy p-space-xl md:p-space-2xl shadow-[0_12px_40px_rgba(13,27,62,0.6)] flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-2xl text-center md:text-left">
+<span class="font-label-badge text-label-badge text-institutional-gold uppercase tracking-wider font-semibold">COLLABORATION TECHNIQUE</span>
+<h2 class="font-headline-lg text-headline-lg text-pure-white">
+            Intéressé par mon profil pour un projet ou une opportunité ?
+          </h2>
+<p class="font-body-md text-body-md text-pure-white/75">
+            Disponible pour des missions d'architecture Cloud, d'automatisation CI/CD, ou de développement Full Stack à haute valeur ajoutée.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full md:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-3 rounded-lg bg-electric-orange text-deep-navy font-title-card text-body-md font-semibold shadow-[0_4px_20px_rgba(255,138,0,0.35)] hover:brightness-110 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="">Télécharger mon CV complet (PDF)</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-3 rounded-lg bg-transparent text-pure-white font-title-card text-body-md font-semibold hover:bg-pure-white/10 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Échanger sur votre projet</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Filter Micro-Interaction Script -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('.timeline-filter-btn');
+      const timelineEntries = document.querySelectorAll('.timeline-entry');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Reset button styles
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-deep-navy', 'text-pure-white', 'shadow-md');
+            b.classList.add('bg-deep-navy/5', 'text-deep-navy');
+          });
+
+          // Set active button
+          btn.classList.add('bg-deep-navy', 'text-pure-white', 'shadow-md');
+          btn.classList.remove('bg-deep-navy/5', 'text-deep-navy');
+
+          // Filter entries
+          timelineEntries.forEach(entry => {
+            const categories = entry.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              entry.style.display = 'flex';
+            } else {
+              entry.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-deep-navy border-t border-institutional-gold/20 pt-space-2xl pb-space-xl"><div class="max-w-[1280px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-xl"><div class="md:col-span-6 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-pure-white">Aristide Kenfack</span><span class="font-label-badge text-label-badge px-space-xs py-0.5 rounded border border-institutional-gold/40 text-institutional-gold">CM · DOUALA</span></div><p class="font-body-sm text-body-sm text-white-muted max-w-md">Ingénieur Full Stack &amp; DevOps chevronné. Architectures cloud robustes, déploiements automatisés CI/CD et systèmes distribués à haute disponibilité.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-code text-label-code text-institutional-gold uppercase">Navigation</span><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="parcours" href="#">Parcours</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="competences" href="#">Compétences</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="projets" href="#">Projets</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="contact" href="#">Contact</a></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-code text-label-code text-institutional-gold uppercase">Réseaux Professionnels</span><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span>GitHub</a><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">badge</span>LinkedIn</a><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">public</span>Twitter / X</a></div></div><div class="border-t border-institutional-gold/15 pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-label-code text-label-code text-white-faint">© 2026 Aristide Kenfack · Full Stack · DevOps · Douala, CM</p><div class="flex items-center gap-space-xs font-label-badge text-label-badge text-institutional-gold"><span class="inline-block w-2 h-2 rounded-full bg-electric-orange"></span><span class="">Production Ready</span></div></div></div></footer>
+
+</body></html>

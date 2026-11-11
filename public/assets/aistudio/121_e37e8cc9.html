@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#2f1500","secondary":"#ffb77f","gold-subtle":"rgba(212, 175, 55, 0.22)","on-tertiary":"#3c2f00","inverse-on-surface":"#2f3131","on-background":"#e2e2e2","deep-navy":"#0D1B3E","outline-variant":"#45464e","surface-container-high":"#282a2b","white-muted":"rgba(255, 255, 255, 0.72)","surface-container-highest":"#333535","on-surface":"#e2e2e2","pure-white":"#FFFFFF","on-secondary-container":"#613100","electric-orange":"#FF8A00","primary-fixed":"#dbe1ff","inverse-primary":"#515d84","surface-variant":"#333535","navy-border":"#1E3368","white-faint":"rgba(255, 255, 255, 0.44)","surface-container":"#1e2020","tertiary":"#e9c349","on-primary-container":"#7784ad","on-secondary-fixed-variant":"#6f3900","on-tertiary-fixed":"#241a00","secondary-container":"#ff8a00","on-primary":"#222f53","surface-tint":"#b9c5f2","secondary-fixed":"#ffdcc4","on-error":"#690005","navy-elevated":"#14244F","error":"#ffb4ab","on-tertiary-container":"#4e3d00","surface":"#121414","background":"#121414","on-primary-fixed-variant":"#39456b","institutional-gold":"#D4AF37","inverse-surface":"#e2e2e2","on-surface-variant":"#c6c6cf","tertiary-fixed-dim":"#e9c349","on-primary-fixed":"#0b1a3d","primary":"#b9c5f2","primary-container":"#0d1b3e","error-container":"#93000a","primary-fixed-dim":"#b9c5f2","surface-container-lowest":"#0c0f0f","on-error-container":"#ffdad6","surface-dim":"#121414","tertiary-fixed":"#ffe088","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","secondary-fixed-dim":"#ffb77f","surface-container-low":"#1a1c1c","surface-bright":"#37393a","outline":"#8f9099","on-secondary":"#4e2600"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-3xl":"6rem","space-2xl":"4rem","gutter":"1.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","margin":"3rem"},"fontFamily":{"headline-sm":["Geist"],"display-hero":["Geist"],"display-hero-mobile":["Geist"],"label-code":["JetBrains Mono"],"label-badge":["Geist"],"headline-md":["Geist"],"title-card":["Geist"],"headline-lg":["Geist"],"headline-lg-mobile":["Geist"],"body-md":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"title-card":["17px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-deep-navy text-on-surface font-body-md text-body-md min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-deep-navy/85 backdrop-blur-xl border-b border-institutional-gold/20"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Logo AK Aristide Kenfack" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFuHcTSSlzI3l4b4zR-AEOZzMTuRlm6kPJMI2XTWxpmLNCpMzS6P5bt92GZiaQNurXiB-QitQK4LbQUcjwOsCA9Xcq0NeDmttOOb20gxnOvB4Ph3uhMp60AI4qJI599HOpaH1J3yf_QYsSmGT3z5XOGoXZWFSM0DpKeACST1wzEwnf1jAgfRip2vDF-tCLZ0jH3JzItzozb_YFFqYB2av67DWHg8sqkmmKCIPMQr_VgA"/><div class="flex flex-col"><span class="font-title-card text-title-card text-pure-white tracking-tight">Aristide Kenfack</span><span class="font-label-badge text-label-badge text-institutional-gold tracking-wider uppercase">Full Stack · DevOps</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-electric-orange font-title-card"><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="parcours" href="#">Parcours</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="competences" href="#">Compétences</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="projets" href="#">Projets</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-electric-orange transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-electric-orange text-deep-navy font-title-card text-body-sm shadow-[0_2px_12px_rgba(255,138,0,0.3)] hover:brightness-110 transition-all" data-path="cv" href="#">CV</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-deep-navy"><div class="flex flex-col w-full">
+<!-- SECTION 1: HEADER & STATS -->
+<section class="w-full py-space-2xl bg-deep-navy relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin">
+<!-- Tagline & Titles -->
+<div class="flex flex-col items-start gap-space-sm max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-deep-navy shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-electric-orange animate-pulse"></span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-institutional-gold">Réalisations &amp; Études de Cas Techniques</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-pure-white tracking-tight">
+          Systèmes Déployés, Architectures Résilientes &amp; Produits Livrés
+        </h1>
+<p class="font-body-lg text-body-lg text-white-muted leading-relaxed">
+          Une sélection de plateformes web, mobiles et d'infrastructures DevOps conçues avec rigueur industrielle, disponibilité continue et impact mesurable à Douala et à l'international.
+        </p>
+</div>
+<!-- Key Global Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mt-space-2xl">
+<!-- Metric 1 -->
+<div class="bg-navy-elevated p-space-lg rounded-xl shadow-md flex flex-col justify-between group hover:bg-[#182C61] transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">SYSTÈMES CORE</span>
+<span class="material-symbols-outlined text-white-muted text-[20px]">layers</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-electric-orange font-bold tracking-tight">5+</div>
+<div class="font-body-sm text-body-sm text-white-muted mt-1">Systèmes critiques en production 24/7</div>
+</div>
+<div class="w-full bg-deep-navy h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-electric-orange h-full w-full rounded-full"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-navy-elevated p-space-lg rounded-xl shadow-md flex flex-col justify-between group hover:bg-[#182C61] transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">OPTIMISATION INDEX</span>
+<span class="material-symbols-outlined text-white-muted text-[20px]">speed</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-electric-orange font-bold tracking-tight">−30%</div>
+<div class="font-body-sm text-body-sm text-white-muted mt-1">Latence d'indexation Typesense</div>
+</div>
+<div class="w-full bg-deep-navy h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-institutional-gold h-full w-[70%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-navy-elevated p-space-lg rounded-xl shadow-md flex flex-col justify-between group hover:bg-[#182C61] transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">SLA INFRASTRUCTURE</span>
+<span class="material-symbols-outlined text-white-muted text-[20px]">verified</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-electric-orange font-bold tracking-tight">99.98%</div>
+<div class="font-body-sm text-body-sm text-white-muted mt-1">Disponibilité serveurs &amp; CI/CD</div>
+</div>
+<div class="w-full bg-deep-navy h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-pure-white h-full w-[99.98%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-navy-elevated p-space-lg rounded-xl shadow-md flex flex-col justify-between group hover:bg-[#182C61] transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">DÉBIT CHARGE FINTECH</span>
+<span class="material-symbols-outlined text-white-muted text-[20px]">bolt</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-electric-orange font-bold tracking-tight">2 000+</div>
+<div class="font-body-sm text-body-sm text-white-muted mt-1">Transactions/sec sans dégradation</div>
+</div>
+<div class="w-full bg-deep-navy h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-electric-orange h-full w-[85%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Filter Controls Bar -->
+<div class="mt-space-xl flex flex-wrap items-center gap-space-sm" id="project-filters">
+<button class="filter-btn px-space-md py-space-xs rounded font-title-card text-body-sm transition-all bg-electric-orange text-deep-navy shadow-[0_2px_12px_rgba(255,138,0,0.3)]" data-category="all">
+          Tous les projets
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded font-title-card text-body-sm transition-all bg-navy-elevated text-pure-white hover:text-electric-orange hover:bg-[#182C61]" data-category="fullstack">
+          Full Stack &amp; Web
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded font-title-card text-body-sm transition-all bg-navy-elevated text-pure-white hover:text-electric-orange hover:bg-[#182C61]" data-category="devops">
+          DevOps &amp; Cloud Infra
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded font-title-card text-body-sm transition-all bg-navy-elevated text-pure-white hover:text-electric-orange hover:bg-[#182C61]" data-category="mobile">
+          Applications Mobiles
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded font-title-card text-body-sm transition-all bg-navy-elevated text-pure-white hover:text-electric-orange hover:bg-[#182C61]" data-category="fintech">
+          FinTech &amp; Paiements
+        </button>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CASE STUDIES SHOWCASE -->
+<section class="w-full py-space-3xl bg-deep-navy">
+<div class="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-2xl" id="projects-grid">
+<!-- PROJET 1: AfriPay (FinTech & High Scale) -->
+<article class="project-item bg-navy-elevated rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all hover:bg-[#182C61]" data-categories="fintech fullstack">
+<!-- Visual & Terminal Overview -->
+<div class="lg:col-span-6 bg-[#09122B] p-space-xl flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-electric-orange"></span>
+<span class="w-3 h-3 rounded-full bg-institutional-gold"></span>
+<span class="w-3 h-3 rounded-full bg-pure-white opacity-40"></span>
+<span class="font-label-code text-label-code text-white-muted ml-2">afripay-core-node-01.local</span>
+</div>
+<span class="font-label-badge text-label-badge text-pure-white uppercase px-2 py-0.5 rounded bg-deep-navy">
+              Live Monitor
+            </span>
+</div>
+<!-- Code / Logs Telemetry Mockup -->
+<div class="my-space-md font-label-code text-label-code text-white-muted space-y-2 select-none bg-deep-navy/80 p-space-md rounded shadow-inner">
+<div class="text-institutional-gold font-semibold">[PROMETHEUS ENGINE] Ingestion rate: 2,140 req/s</div>
+<div class="text-pure-white"><span class="text-electric-orange">▸</span> POST /v1/settlements/mobile-money <span class="text-pure-white font-bold">[200 OK]</span> (18ms)</div>
+<div class="text-white-faint"><span class="text-electric-orange">▸</span> redis.cluster: HSET payload:tx:984712 status=reconciled</div>
+<div class="text-white-faint"><span class="text-electric-orange">▸</span> queue.rabbitmq: partition_0 acks 1,500/s buffer_health=100%</div>
+<div class="text-institutional-gold"><span class="text-electric-orange">▸</span> zero-loss auto-reconciler: 0 unhandled mismatch in 48h</div>
+</div>
+<!-- Technical Snapshot Illustration -->
+<div class="rounded overflow-hidden relative mt-space-sm h-48 bg-deep-navy">
+<img class="object-cover w-full h-full opacity-80" data-alt="High tech dark mode dashboard of a high frequency fintech payment gateway processing thousands of microtransactions with real time metrics, logs and telemetry graphs on deep navy screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqLcWNZnrnP9H-6zfeds8cOuWmNLrKMd_cXIZd2Tu_Ub2mlJu0t0oIjjVVUoIOH11pjvYAvuwr37KTf_Cpg9xc-tWbFbIHv3Fsw1BwWkxu8GTj9MTFqi3nWS8eU-CIeijpc1M0L1hwUEOXiSRKZnp4J37hwMz_eKQpDpMb71dyEoqckAVFWTDniWMRt24qEEL6o4oweOb0guanpJgNFGeuVjmYiHOrVNl05cuqSuUa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#09122B] via-transparent to-transparent"></div>
+</div>
+</div>
+<!-- Content & Architecture Specs -->
+<div class="lg:col-span-6 p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs flex-wrap mb-space-xs">
+<span class="font-label-code text-label-code text-institutional-gold uppercase">FinTech &amp; Architecture Haute Fréquence</span>
+<span class="text-white-faint">·</span>
+<span class="font-label-badge text-label-badge text-electric-orange uppercase">Production Ready</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-pure-white font-bold">
+              AfriPay · Core Engine &amp; Passerelle de Micropaiements
+            </h2>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Conception et déploiement du moteur de paiement central gérant l'agrégation Orange Money, MTN MoMo et cartes bancaires. Résolution des décrochages réseau via mécanismes de reprise idempotente et files de messages asynchrones ultra-véloces.
+            </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-sm my-space-lg">
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-electric-orange block font-bold">2k tx/s</span>
+<span class="font-body-sm text-body-sm text-white-muted">Débit soutenu</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-pure-white block font-bold">0 incident</span>
+<span class="font-body-sm text-body-sm text-white-muted">Réconciliation</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-institutional-gold block font-bold">&lt; 25ms</span>
+<span class="font-body-sm text-body-sm text-white-muted">Cache Redis</span>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="flex flex-wrap gap-2 mb-space-lg">
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Go (Golang)</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">TypeScript</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Redis Cluster</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Docker</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">PostgreSQL</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-institutional-gold">Prometheus</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-md pt-space-md">
+<button class="px-space-md py-space-xs rounded bg-electric-orange text-deep-navy font-title-card text-body-sm hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+              Consulter l'architecture
+            </button>
+<button class="px-space-md py-space-xs rounded bg-deep-navy text-pure-white font-title-card text-body-sm hover:text-electric-orange transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">code</span>
+              Code source / Spec
+            </button>
+</div>
+</div>
+</article>
+<!-- PROJET 2: CloudScale (DevOps & Infrastructure) -->
+<article class="project-item bg-navy-elevated rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all hover:bg-[#182C61]" data-categories="devops">
+<!-- Content & Specifications -->
+<div class="lg:col-span-6 p-space-xl flex flex-col justify-between order-2 lg:order-1">
+<div>
+<div class="flex items-center gap-space-xs flex-wrap mb-space-xs">
+<span class="font-label-code text-label-code text-institutional-gold uppercase">DevOps &amp; Observabilité Cloud</span>
+<span class="text-white-faint">·</span>
+<span class="font-label-badge text-label-badge text-pure-white uppercase px-2 py-0.5 rounded bg-deep-navy">GitOps Zero-Downtime</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-pure-white font-bold">
+              CloudScale · Orchestrateur CI/CD Multi-Cloud &amp; GitOps
+            </h2>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Industrialisation complète des pipelines de déploiement continu pour des charges hybrides. Gestion des images de conteneurs légères multi-stage, reverse-proxying sécurisé Nginx avec HTTP/2 et TLS 1.3, et rollbacks d'urgence automatisés sur seuil d'erreurs 5xx.
+            </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-sm my-space-lg">
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-electric-orange block font-bold">−45%</span>
+<span class="font-body-sm text-body-sm text-white-muted">Cycle de release</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-pure-white block font-bold">&lt; 15s</span>
+<span class="font-body-sm text-body-sm text-white-muted">Rollback auto</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-institutional-gold block font-bold">24/7</span>
+<span class="font-body-sm text-body-sm text-white-muted">Grafana Alerts</span>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="flex flex-wrap gap-2 mb-space-lg">
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Kubernetes</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Docker Multi-Stage</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">GitHub Actions</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Nginx SSL Hardening</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-institutional-gold">Grafana</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Bash/Linux</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-md pt-space-md">
+<button class="px-space-md py-space-xs rounded bg-electric-orange text-deep-navy font-title-card text-body-sm hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+              Examiner le Pipeline
+            </button>
+<button class="px-space-md py-space-xs rounded bg-deep-navy text-pure-white font-title-card text-body-sm hover:text-electric-orange transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">description</span>
+              Fichiers de Config / Manifests
+            </button>
+</div>
+</div>
+<!-- Visual / Flow Graph Graphic -->
+<div class="lg:col-span-6 bg-[#09122B] p-space-xl flex flex-col justify-between order-1 lg:order-2">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">PIPELINE EXECUTION GRAPH</span>
+<span class="font-label-badge text-label-badge text-pure-white bg-deep-navy px-2 py-0.5 rounded">PASSED #142</span>
+</div>
+<!-- Inline Flowchart Visualization -->
+<div class="my-space-md space-y-3 font-label-code text-label-code">
+<div class="flex items-center justify-between bg-deep-navy p-space-sm rounded">
+<div class="flex items-center gap-2 text-pure-white">
+<span class="material-symbols-outlined text-electric-orange text-[18px]">build</span>
+<span>Stage 1: Lint &amp; Security Scan</span>
+</div>
+<span class="text-pure-white font-bold">24s</span>
+</div>
+<div class="flex items-center justify-between bg-deep-navy p-space-sm rounded">
+<div class="flex items-center gap-2 text-pure-white">
+<span class="material-symbols-outlined text-electric-orange text-[18px]">inventory_2</span>
+<span>Stage 2: Multi-Platform Docker Build</span>
+</div>
+<span class="text-pure-white font-bold">58s</span>
+</div>
+<div class="flex items-center justify-between bg-deep-navy p-space-sm rounded">
+<div class="flex items-center gap-2 text-pure-white">
+<span class="material-symbols-outlined text-institutional-gold text-[18px]">publish</span>
+<span>Stage 3: Blue-Green Staging Sync</span>
+</div>
+<span class="text-institutional-gold font-bold">32s</span>
+</div>
+<div class="flex items-center justify-between bg-deep-navy p-space-sm rounded">
+<div class="flex items-center gap-2 text-pure-white">
+<span class="material-symbols-outlined text-electric-orange text-[18px]">health_and_safety</span>
+<span>Stage 4: Automated Smoke &amp; Healthcheck</span>
+</div>
+<span class="text-pure-white font-bold">11s</span>
+</div>
+</div>
+<div class="rounded overflow-hidden relative mt-space-sm h-48 bg-deep-navy">
+<img class="object-cover w-full h-full opacity-80" data-alt="Dark sophisticated server cluster monitoring visualization showing DevOps Kubernetes pods nodes and traffic spikes on deep navy console display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZD4Pqgdy-TqjBrSFhCP7ftPxlh2_JZ9hUl7pA1AsENi_ljo4Q9Rtrf3ISYNjdU8p9GHRGpeAlwuXu2FKXE-h3facRYB9QCAuHeU2eV-ZrBZqUt6YY3NqSCM8HW6bhLmvYL7emrY8FMr26dAUiStaHhwUBG2MdH75rYpAvtghFyWt3unfGji6fBKq4FFNx5DaNCE5T3RGHwnaaz-gRfXB7XiGzxkQPvxPUvqzqt_2t"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#09122B] via-transparent to-transparent"></div>
+</div>
+</div>
+</article>
+<!-- PROJET 3: Search Engine & High Volumetry -->
+<article class="project-item bg-navy-elevated rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all hover:bg-[#182C61]" data-categories="fullstack">
+<!-- Visual & Data Benchmark -->
+<div class="lg:col-span-6 bg-[#09122B] p-space-xl flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">QUERY BENCHMARK (150K ITEMS)</span>
+<span class="font-label-badge text-label-badge text-pure-white bg-deep-navy px-2 py-0.5 rounded">p95 Latency</span>
+</div>
+<!-- SVG Benchmark Comparison -->
+<div class="my-space-md bg-deep-navy/80 p-space-md rounded">
+<div class="space-y-4 font-label-code text-label-code text-pure-white">
+<div>
+<div class="flex justify-between text-body-sm mb-1 text-white-muted">
+<span>Recherche brute SQL LIKE (Ancien système)</span>
+<span class="text-pure-white">410 ms</span>
+</div>
+<div class="w-full bg-deep-navy h-3 rounded-full overflow-hidden">
+<div class="bg-white-faint h-full w-[90%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm mb-1 text-white-muted">
+<span>Typesense Optimisé (Aristide Kenfack)</span>
+<span class="text-electric-orange font-bold">28 ms (−30% total pipe)</span>
+</div>
+<div class="w-full bg-deep-navy h-3 rounded-full overflow-hidden">
+<div class="bg-electric-orange h-full w-[15%] rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-white-muted font-label-code text-[12px]">
+<span>Synchronisation delta continue : PostgreSQL CDC</span>
+<span class="text-institutional-gold font-semibold">100% In-Sync</span>
+</div>
+</div>
+<div class="rounded overflow-hidden relative mt-space-sm h-48 bg-deep-navy">
+<img class="object-cover w-full h-full opacity-80" data-alt="Technical search engine backend interface displaying JSON schemas query timing metrics and high throughput indexing benchmarks on dark navy terminal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHjoTDoS-dhmU-FIoEyNcqwa1ZMuHnBn43Xp37va0T4f8yEI_FL_7jjgwYgzkQXB8iueiUkiw31DwaVvN8O7XLiIF4BQMCnrOnUp0WAZBPebjscWTL7SdQ7xvrHaQyxDjeN9uCGLmmxJ4EgTP1pCKJV6x_S45sbqytb3ezR4XxHwQN9MdjCL-V_te9wFXzPl8qDETT5VmWlrg8snICohKKb7NUSXlWtAOSq3hAAEkl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#09122B] via-transparent to-transparent"></div>
+</div>
+</div>
+<!-- Details & Architecture -->
+<div class="lg:col-span-6 p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs flex-wrap mb-space-xs">
+<span class="font-label-code text-label-code text-institutional-gold uppercase">Backend &amp; Data Indexing</span>
+<span class="text-white-faint">·</span>
+<span class="font-label-badge text-label-badge text-electric-orange uppercase">Haute Volumétrie</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-pure-white font-bold">
+              Plateforme Transactionnelle &amp; Moteur Typesense
+            </h2>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Refonte intégrale de la recherche e-commerce et de l'indexation de catalogue sur plus de 150 000 références produits. Remplacement des requêtes relationnelles lourdes par un cluster Typesense couplé à une synchronisation événementielle.
+            </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-sm my-space-lg">
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-electric-orange block font-bold">−30%</span>
+<span class="font-body-sm text-body-sm text-white-muted">Latence globale</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-pure-white block font-bold">&lt; 40ms</span>
+<span class="font-body-sm text-body-sm text-white-muted">Temps p95</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-institutional-gold block font-bold">150k+</span>
+<span class="font-body-sm text-body-sm text-white-muted">Documents indexés</span>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="flex flex-wrap gap-2 mb-space-lg">
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Node.js</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Laravel</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-electric-orange">Typesense</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">PostgreSQL CDC</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Redis</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-institutional-gold">Jest Testing</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-md pt-space-md">
+<button class="px-space-md py-space-xs rounded bg-electric-orange text-deep-navy font-title-card text-body-sm hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              Voir la Démo
+            </button>
+<button class="px-space-md py-space-xs rounded bg-deep-navy text-pure-white font-title-card text-body-sm hover:text-electric-orange transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">api</span>
+              Documentation API (OpenAPI)
+            </button>
+</div>
+</div>
+</article>
+<!-- PROJET 4: UrbanTrack (Mobile & IoT / Geolocation) -->
+<article class="project-item bg-navy-elevated rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all hover:bg-[#182C61]" data-categories="mobile">
+<!-- Content & Description -->
+<div class="lg:col-span-6 p-space-xl flex flex-col justify-between order-2 lg:order-1">
+<div>
+<div class="flex items-center gap-space-xs flex-wrap mb-space-xs">
+<span class="font-label-code text-label-code text-institutional-gold uppercase">Mobile Flutter &amp; Cartographie</span>
+<span class="text-white-faint">·</span>
+<span class="font-label-badge text-label-badge text-pure-white uppercase px-2 py-0.5 rounded bg-deep-navy">Télémétrie Douala</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-pure-white font-bold">
+              UrbanTrack · Suivi de Flotte &amp; Logistique Urbaine
+            </h2>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Solution applicative pour transporteurs et coursiers opérant dans les zones urbaines d'Afrique Centrale. Maintien d'un mode hors-ligne intégral avec mise en file d'attente locale SQLite et synchronisation par paquets géographiques compressés.
+            </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-sm my-space-lg">
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-electric-orange block font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-white-muted">Synchro offline</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-pure-white block font-bold">1s</span>
+<span class="font-body-sm text-body-sm text-white-muted">Rafraîchissement</span>
+</div>
+<div class="bg-deep-navy p-space-sm rounded">
+<span class="font-headline-sm text-headline-sm text-institutional-gold block font-bold">−38%</span>
+<span class="font-body-sm text-body-sm text-white-muted">Conso Batterie</span>
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="flex flex-wrap gap-2 mb-space-lg">
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Flutter</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">Dart</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">FastAPI (Python)</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-electric-orange">PostGIS</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-pure-white">WebSockets</span>
+<span class="font-label-code text-label-code px-2 py-1 rounded bg-deep-navy text-institutional-gold">SQLite Encrypted</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-md pt-space-md">
+<button class="px-space-md py-space-xs rounded bg-electric-orange text-deep-navy font-title-card text-body-sm hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+              Étude de Cas Complète
+            </button>
+<button class="px-space-md py-space-xs rounded bg-deep-navy text-pure-white font-title-card text-body-sm hover:text-electric-orange transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+              Vidéo Démo
+            </button>
+</div>
+</div>
+<!-- Visual Map & Device Context -->
+<div class="lg:col-span-6 bg-[#09122B] p-space-xl flex flex-col justify-between order-1 lg:order-2">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-institutional-gold">GEO TELEMETRY CONSOLE</span>
+<span class="font-label-badge text-label-badge text-pure-white bg-deep-navy px-2 py-0.5 rounded">DOUALA SECTOR 4</span>
+</div>
+<!-- Location view -->
+<div class="my-space-md w-full h-56 rounded bg-cover bg-center relative overflow-hidden" data-location="Douala, Cameroon" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZdxMeJxRWVPjtbzO2SrUTE8RYPIMNKxoHOfhCFlGC7JrqXMBF60nXFCwtmPdvawwrZzMCXz6BwhpSjIoptWc868pTcGK9F6cs6MbxdhCFjjzj7nUvVgERB1bHVtG7y0Ty-8r_PeDAtaEMq_xnk58KadX-EYtN5HROXul-jUvbYYWiv959yMJ6zN1geCIqdGSHPNGYJSQq3VbseaJP0vLAH43Nsje5iXU7pi2M7YSx')">
+<div class="absolute inset-0 bg-deep-navy/60 backdrop-blur-[1px] flex flex-col justify-end p-space-md">
+<div class="flex items-center gap-2 text-pure-white font-label-code text-body-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-electric-orange animate-ping"></span>
+<span>Active Ping : Akwa ⟶ Bonanjo (1,840 nodes trackés)</span>
+</div>
+<span class="text-white-muted text-[11px] font-label-code mt-1">Spatial query distance threshold: PostGIS ST_DWithin &lt; 25m</span>
+</div>
+</div>
+<!-- Telemetry status indicator -->
+<div class="bg-deep-navy p-space-sm rounded flex items-center justify-between font-label-code text-label-code text-white-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-institutional-gold text-[16px]">sensors</span>
+<span>WebSocket connection: persistent TLS</span>
+</div>
+<span class="text-pure-white font-bold">12ms ACK</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 3: WORKFLOW & DELIVERY STANDARDS -->
+<section class="w-full py-space-3xl bg-deep-navy">
+<div class="max-w-[1280px] mx-auto px-margin">
+<!-- Section Intro -->
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-institutional-gold">Rigueur Industrielle</span>
+<h2 class="font-headline-lg text-headline-lg text-pure-white mt-space-xs font-bold">
+          Workflow &amp; Standards de Livraison
+        </h2>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm">
+          Chaque projet confié à Aristide Kenfack répond aux critères stricts de maintenabilité, d'observabilité et de sécurité logicielle.
+        </p>
+</div>
+<!-- 3 Columns Architecture Principles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-navy-elevated p-space-xl rounded-xl shadow-lg flex flex-col justify-between hover:bg-[#182C61] transition-all">
+<div>
+<div class="w-12 h-12 rounded bg-deep-navy flex items-center justify-center text-electric-orange mb-space-md">
+<span class="material-symbols-outlined text-[26px]">contract</span>
+</div>
+<span class="font-label-code text-label-code text-institutional-gold block mb-1">01. ARCHITECTURE PREMIÈRE</span>
+<h3 class="font-title-card text-title-card text-pure-white font-bold">
+              Spécifications &amp; Contrats API Clairs
+            </h3>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Rédaction formelle des schémas OpenAPI / Swagger avant toute implémentation. Typage strict de bout en bout (TypeScript / Go) et validation systématique de toutes les requêtes en entrée pour éliminer les bugs d'interopérabilité.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm text-institutional-gold font-label-code text-body-sm flex items-center gap-1">
+<span>Zéro dérive de schéma</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-navy-elevated p-space-xl rounded-xl shadow-lg flex flex-col justify-between hover:bg-[#182C61] transition-all">
+<div>
+<div class="w-12 h-12 rounded bg-deep-navy flex items-center justify-center text-electric-orange mb-space-md">
+<span class="material-symbols-outlined text-[26px]">fact_check</span>
+</div>
+<span class="font-label-code text-label-code text-institutional-gold block mb-1">02. QUALITÉ PROUVÉE</span>
+<h3 class="font-title-card text-title-card text-pure-white font-bold">
+              Tests Automatisés &amp; Intégration Continue
+            </h3>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Couverture de tests unitaires et d'intégration systématique (Jest, PHPUnit, suites Go). Linting rigoureux, hooks de pré-commit stricts et validation automatique avant tout merge vers les branches de production.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm text-institutional-gold font-label-code text-body-sm flex items-center gap-1">
+<span>Couverture critique &gt; 85%</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-navy-elevated p-space-xl rounded-xl shadow-lg flex flex-col justify-between hover:bg-[#182C61] transition-all">
+<div>
+<div class="w-12 h-12 rounded bg-deep-navy flex items-center justify-center text-electric-orange mb-space-md">
+<span class="material-symbols-outlined text-[26px]">monitoring</span>
+</div>
+<span class="font-label-code text-label-code text-institutional-gold block mb-1">03. RÉSILIENCE OPÉRATIONNELLE</span>
+<h3 class="font-title-card text-title-card text-pure-white font-bold">
+              Conteneurisation &amp; Monitoring Actif
+            </h3>
+<p class="font-body-md text-body-md text-white-muted mt-space-sm leading-relaxed">
+              Construction d'images Docker multi-stage épurées et sans failles CVE identifiées. Collecte des métriques vitales sous Prometheus, dashboards Grafana et alertes automatiques instantanées via Slack et Email.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm text-institutional-gold font-label-code text-body-sm flex items-center gap-1">
+<span>Traçabilité &amp; alerting continu</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CALL TO ACTION BANNER -->
+<section class="w-full py-space-2xl bg-deep-navy">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="bg-navy-elevated p-space-2xl rounded-xl shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl">
+<!-- Text details -->
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-institutional-gold">Ingénierie &amp; Infrastructure</span>
+<span class="text-white-faint">/</span>
+<span class="font-label-badge text-label-badge text-electric-orange uppercase">Disponibilité Immédiate</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-pure-white font-bold tracking-tight">
+            Vous avez un projet technique ambitieux ou un besoin d'infrastructure ?
+          </h2>
+<p class="font-body-lg text-body-lg text-white-muted mt-space-sm">
+            Disponible pour des missions d'ingénierie logicielle Full Stack, audit de performance backend, sécurisation et déploiement DevOps haute fidélité.
+          </p>
+</div>
+<!-- Buttons CTA -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full lg:w-auto shrink-0">
+<a class="px-space-xl py-space-md rounded bg-electric-orange text-deep-navy font-title-card text-body-md text-center shadow-[0_4px_20px_rgba(255,138,0,0.3)] hover:brightness-110 transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">send</span>
+            Démarrer un projet
+          </a>
+<a class="px-space-xl py-space-md rounded bg-deep-navy text-pure-white font-title-card text-body-md text-center hover:text-electric-orange transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+            Télécharger mon CV (PDF)
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side filter interaction -->
+<script>
+    (function() {
+      const filterBtns = document.querySelectorAll('#project-filters .filter-btn');
+      const projectItems = document.querySelectorAll('#projects-grid .project-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.getAttribute('data-category');
+
+          // Reset styles
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-electric-orange', 'text-deep-navy', 'shadow-[0_2px_12px_rgba(255,138,0,0.3)]');
+            b.classList.add('bg-navy-elevated', 'text-pure-white');
+          });
+
+          // Active style
+          btn.classList.add('bg-electric-orange', 'text-deep-navy', 'shadow-[0_2px_12px_rgba(255,138,0,0.3)]');
+          btn.classList.remove('bg-navy-elevated', 'text-pure-white');
+
+          // Filter elements
+          projectItems.forEach(item => {
+            const itemCategories = item.getAttribute('data-categories') || '';
+            if (category === 'all' || itemCategories.includes(category)) {
+              item.style.display = 'grid';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-deep-navy border-t border-institutional-gold/20 pt-space-2xl pb-space-xl"><div class="max-w-[1280px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-xl"><div class="md:col-span-6 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-pure-white">Aristide Kenfack</span><span class="font-label-badge text-label-badge px-space-xs py-0.5 rounded border border-institutional-gold/40 text-institutional-gold">CM · DOUALA</span></div><p class="font-body-sm text-body-sm text-white-muted max-w-md">Ingénieur Full Stack &amp; DevOps chevronné. Architectures cloud robustes, déploiements automatisés CI/CD et systèmes distribués à haute disponibilité.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-code text-label-code text-institutional-gold uppercase">Navigation</span><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="accueil" href="#">Accueil</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="parcours" href="#">Parcours</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="competences" href="#">Compétences</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="projets" href="#">Projets</a><a class="font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" data-path="contact" href="#">Contact</a></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-code text-label-code text-institutional-gold uppercase">Réseaux Professionnels</span><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span>GitHub</a><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">badge</span>LinkedIn</a><a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm text-white-muted hover:text-electric-orange transition-colors" href="#" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">public</span>Twitter / X</a></div></div><div class="border-t border-institutional-gold/15 pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-label-code text-label-code text-white-faint">© 2026 Aristide Kenfack · Full Stack · DevOps · Douala, CM</p><div class="flex items-center gap-space-xs font-label-badge text-label-badge text-institutional-gold"><span class="inline-block w-2 h-2 rounded-full bg-electric-orange"></span><span>Production Ready</span></div></div></div></footer></body></html>

@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-white: #FFFFFF;
+    --text-blue-primary: #0D1B3E;
+    --text-blue-secondary: #1E3A8A;
+    --text-blue-muted: #334E68;
+    --text-blue-light: #486581;
+    --accent-orange: #FF8A00;
+    --accent-orange-dark: #D97706;
+    --border-light: rgba(13, 27, 62, 0.12);
+  }
+
+  html {
+    font-family: 'Geist', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #0D1B3E;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #0D1B3E;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* White Theme Cards & Glass Effects */
+.bg-white-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(13, 27, 62, 0.1);
+  box-shadow: 0 4px 20px rgba(13, 27, 62, 0.05);
+}
+
+.bg-white-card:hover {
+  border-color: rgba(255, 138, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(13, 27, 62, 0.09);
+}
+
+.glass-nav-white {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(13, 27, 62, 0.1);
+}
+
+.glass-dock-white {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(13, 27, 62, 0.1);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(13, 27, 62, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 138, 0, 0.5);
+}
+
+/* Fluid Hardware-Accelerated Screen Transitions */
+@keyframes screenFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-screen-in {
+  animation: screenFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal-in {
+  animation: modalPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
